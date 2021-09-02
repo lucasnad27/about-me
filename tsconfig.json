@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "jsxImportSource": "@emotion/react" // for the css prop
+  },
+  "files": ["twin.d.ts"],
+}
