@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Loadable from '@loadable/component';
 
 import Container from 'components/ui/Container';
@@ -12,31 +12,34 @@ import * as Styled from './styles';
 const Carousel = Loadable(() => import('components/ui/Carousel'));
 
 const Testimonials = () => {
-  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`{
-  markdownRemark(frontmatter: {category: {eq: "testimonials section"}}) {
-    frontmatter {
-      title
-      subtitle
-    }
-  }
-  allMarkdownRemark(filter: {frontmatter: {category: {eq: "testimonials"}}}) {
-    edges {
-      node {
-        id
-        html
+  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
+    query {
+      markdownRemark(frontmatter: { category: { eq: "testimonials section" } }) {
         frontmatter {
           title
-          cover {
-            childImageSharp {
-              gatsbyImageData(width: 80, layout: CONSTRAINED)
+          subtitle
+        }
+      }
+      allMarkdownRemark(filter: { frontmatter: { category: { eq: "testimonials" } } }) {
+        edges {
+          node {
+            id
+            html
+            frontmatter {
+              title
+              cover {
+                childImageSharp {
+                  fluid(maxWidth: 80) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
       }
     }
-  }
-}
-`);
+  `);
 
   const sectionTitle = markdownRemark.frontmatter;
   const testimonials = allMarkdownRemark.edges;

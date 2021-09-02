@@ -10,39 +10,39 @@ import TitleSection from 'components/ui/TitleSection';
 import * as Styled from './styles';
 
 const Posts = () => {
-  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`{
-  markdownRemark(frontmatter: {category: {eq: "blog section"}}) {
-    frontmatter {
-      title
-      subtitle
-    }
-  }
-  allMarkdownRemark(
-    filter: {frontmatter: {category: {eq: "blog"}, published: {eq: true}}}
-    sort: {fields: frontmatter___date, order: DESC}
-  ) {
-    edges {
-      node {
-        id
-        html
-        fields {
-          slug
-        }
+  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
+    query {
+      markdownRemark(frontmatter: { category: { eq: "blog section" } }) {
         frontmatter {
           title
-          description
-          date(formatString: "MMM DD, YYYY")
-          tags
-          cover {
-            childImageSharp {
-              gatsbyImageData(width: 800, layout: CONSTRAINED)
+          subtitle
+        }
+      }
+      allMarkdownRemark(
+        filter: { frontmatter: { category: { eq: "blog" }, published: { eq: true } } }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
+        edges {
+          node {
+            id
+            html
+            frontmatter {
+              title
+              description
+              date(formatString: "MMM DD, YYYY")
+              tags
+              cover {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
       }
     }
-  }
-}
 `);
 
   const sectionTitle = markdownRemark.frontmatter;

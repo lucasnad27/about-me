@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    `gatsby-plugin-root-import`,
     `gatsby-plugin-typescript`, 
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -53,6 +52,14 @@ module.exports = {
       }
     },
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+        purgeOnly: [`src/assets/styles/global.css`]
+      }
+    },
+    `gatsby-plugin-offline`
   ],
 }
