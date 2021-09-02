@@ -51,15 +51,15 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
-        purgeOnly: [`src/assets/styles/global.css`]
+        purgeOnly: [`assets/styles/global.css`]
       }
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`,
   ],
 }

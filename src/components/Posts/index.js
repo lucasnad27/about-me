@@ -26,6 +26,9 @@ const Posts = () => {
           node {
             id
             html
+            fields {
+              slug
+            }
             frontmatter {
               title
               description
@@ -60,7 +63,7 @@ const Posts = () => {
           return (
             <Styled.Post key={id}>
               <Link to={slug}>
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
+                <motion.div whileHover={{ scale: 1.05 }} whiletap={{ scale: 1 }}>
                   <Styled.Card>
                     <Styled.Image>
                       <GatsbyImage image={cover.childImageSharp.gatsbyImageData} alt={title} />

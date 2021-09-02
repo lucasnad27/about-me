@@ -33,11 +33,11 @@ const HeroBanner = () => {
 };
 
 HeroBanner.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  linkTo: PropTypes.string.isRequired,
-  linkText: PropTypes.string.isRequired
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  content: PropTypes.string,
+  linkTo: PropTypes.string,
+  linkText: PropTypes.string
 };
 
 export default HeroBanner;
