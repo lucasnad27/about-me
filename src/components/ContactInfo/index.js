@@ -1,56 +1,46 @@
+
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import InfoBlock from 'components/ui/InfoBlock';
 import Container from 'components/ui/Container';
+import Button from 'components/ui/Button';
 import TitleSection from 'components/ui/TitleSection';
 
 import * as Styled from './styles';
 
-const ConctactInfo = () => {
-  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
+const ContactInfo = () => {
+  const { markdownRemark } = useStaticQuery(graphql`
     query {
       markdownRemark(frontmatter: { category: { eq: "contact section" } }) {
         frontmatter {
           title
           subtitle
-        }
-      }
-      allMarkdownRemark(filter: { frontmatter: { category: { eq: "contact" } } }, sort: { fields: fileAbsolutePath }) {
-        edges {
-          node {
-            id
-            frontmatter {
-              title
-              icon
-              content
-            }
-          }
+          namePlaceholder
+          emailPlaceholder
+          submitPlaceholder
+          messagePlaceHolder
         }
       }
     }
   `);
 
-  const sectionTitle = markdownRemark.frontmatter;
-  const contacts = allMarkdownRemark.edges;
+  const contactInfo = markdownRemark.frontmatter;
 
   return (
-    <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
-      {contacts.map((item) => {
-        const {
-          id,
-          frontmatter: { title, icon, content }
-        } = item.node;
-
-        return (
-          <Styled.ContactInfoItem key={id}>
-            <InfoBlock icon={icon} title={title} content={content} center />
-          </Styled.ContactInfoItem>
-        );
-      })}
-    </Container>
+    <Styled.ContactInfo>
+      <Container section>
+        <TitleSection title={contactInfo.title} subtitle={contactInfo.subtitle} center />
+        <Styled.Form name="contact" method="POST" data-netlify="true">
+          <Styled.Input type="text" placeholder={contactInfo.namePlaceholder} />
+          <Styled.Input type="email" placeholder={contactInfo.emailPlaceholder} />
+          <Styled.TextArea name="message" placeholder={contactInfo.messagePlaceHolder} />
+          <Button type="submit" primary block>
+            {contactInfo.submitPlaceholder}
+          </Button>
+        </Styled.Form>
+      </Container>
+    </Styled.ContactInfo>
   );
 };
 
-export default ConctactInfo;
+export default ContactInfo;

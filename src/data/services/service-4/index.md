@@ -1,6 +1,6 @@
 ---
 category: 'services'
-title: 'Digital Marketing'
+title: 'Product Strategy'
 icon: 'bullhorn'
-description: 'Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat.'
+description: 'I spend a lot of time thinking about product. Fostering a positive, collaborative relationship with product is critical to building anything worth a damn.'
 ---

@@ -1,6 +1,6 @@
 ---
 category: 'services'
-title: 'Copywrite'
+title: 'People Manager'
 icon: 'edit'
-description: 'Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat.'
+description: 'I focus on running efficient, high-velocity engineering teams; achieved by aligning incentives, fostering a team culture that celebrates excellence and humiity'
 ---

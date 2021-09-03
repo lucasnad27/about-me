@@ -1,4 +1,3 @@
 {
-  "compilerOptions": {},
-  "files": ["twin.d.ts"],
+  "compilerOptions": {"baseUrl": "./src"}
 }

@@ -1,5 +1,10 @@
 ---
 category: 'contact section'
-title: 'Contacts'
-subtitle: 'For more info contact me'
+title: 'Provide your contact information'
+subtitle: 'Reach out'
+namePlaceholder: 'First Name'
+emailPlaceholder: 'Email'
+submitPlaceholder: 'Submit'
+messagePlaceHolder: 'Anything else you would like to add?'
 ---
+
