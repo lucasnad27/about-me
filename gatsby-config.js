@@ -52,13 +52,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        tailwind: true,
-        purgeOnly: [`assets/styles/global.css`]
-      }
-    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
   ],
