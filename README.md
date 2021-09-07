@@ -7,6 +7,8 @@
   A place for my professional prose, pontifications, and permanent notes.
 </h1>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f6b86b2-c206-40b6-8f84-54b82a6a1e00/deploy-status)](https://app.netlify.com/sites/happy-joliot-1e6cfd/deploys)
+
 ## 📝 Context
 
 This site is built using the gatsby static site generator. It's great for a host of frontend applications, but I'm using it as a way to publish work for my professional site. The main features of gatsby that are important in the context of this site:
