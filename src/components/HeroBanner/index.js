@@ -14,6 +14,15 @@ const HeroBanner = () => {
           content
           linkTo
           linkText
+          quote
+          quoteAttribution
+          quoteSubtitle
+          quoteUrl
+          quoteAvatar {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
       }
     }
@@ -28,6 +37,11 @@ const HeroBanner = () => {
       content={heroBanner.content}
       linkTo={heroBanner.linkTo}
       linkText={heroBanner.linkText}
+      quote={heroBanner.quote}
+      quoteAttribution={heroBanner.quoteAttribution}
+      quoteAvatar={heroBanner.quoteAvatar}
+      quoteSubtitle={heroBanner.quoteSubtitle}
+      quoteUrl={heroBanner.quoteUrl}
     />
   );
 };

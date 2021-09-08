@@ -5,20 +5,22 @@ import { Link } from 'gatsby';
 import Container from 'components/ui/Container';
 import Button from 'components/ui/Button';
 import TitleSection from 'components/ui/TitleSection';
+import Quote from 'components/ui/Quote';
 
 import * as Styled from './styles';
 
-const Banner = ({ title, subtitle, content, linkTo, linkText }) => (
-  <Styled.Banner>
+const Banner = ({ title, subtitle, content, linkTo, linkText, quote, quoteAttribution, quoteAvatar, quoteSubtitle, quoteUrl}) => {
+  return (<Styled.Banner>
     <Container section>
       <TitleSection title={title} subtitle={subtitle} />
+      <Quote quote={quote} quoteAttribution={quoteAttribution} quoteAvatar={quoteAvatar} quoteSubtitle={quoteSubtitle} quoteUrl={quoteUrl} />
       <Styled.Content>{content}</Styled.Content>
       <Link to={linkTo}>
         <Button primary>{linkText}</Button>
       </Link>
     </Container>
-  </Styled.Banner>
-);
+  </Styled.Banner>);
+};
 
 Banner.propTypes = {
   title: PropTypes.string.isRequired,
