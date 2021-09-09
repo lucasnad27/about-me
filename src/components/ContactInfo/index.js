@@ -32,6 +32,7 @@ const ContactInfo = () => {
         <TitleSection title={contactInfo.title} subtitle={contactInfo.subtitle} center />
         <Styled.Form name="contact_me" netlify-honeypot="bot-field" method="post" data-netlify="true">
           <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact_me" />
           <Styled.Input type="text" placeholder={contactInfo.namePlaceholder} />
           <Styled.Input type="email" placeholder={contactInfo.emailPlaceholder} />
           <Styled.TextArea name="message" placeholder={contactInfo.messagePlaceHolder} />
