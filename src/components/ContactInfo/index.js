@@ -30,7 +30,8 @@ const ContactInfo = () => {
     <Styled.ContactInfo>
       <Container section>
         <TitleSection title={contactInfo.title} subtitle={contactInfo.subtitle} center />
-        <Styled.Form name="contact" method="POST" data-netlify="true">
+        <Styled.Form name="contact" method="post" data-netlify="true">
+          <input type="hidden" name="bot-field" />
           <Styled.Input type="text" placeholder={contactInfo.namePlaceholder} />
           <Styled.Input type="email" placeholder={contactInfo.emailPlaceholder} />
           <Styled.TextArea name="message" placeholder={contactInfo.messagePlaceHolder} />

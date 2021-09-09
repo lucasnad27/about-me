@@ -1,5 +1,5 @@
 ---
 category: 'experiences section'
 title: 'Companies'
-subtitle: 'My Experience'
+subtitle: 'Professional Experience'
 ---

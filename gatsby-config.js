@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Electric Ocean`,
+    title: `Lucas Culbertson`,
     description: `A place for pontification, prose, and projects`,
     author: `@lucasnad27`,
     siteUrl: `https://electricocean.io`,

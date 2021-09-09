@@ -7,7 +7,7 @@ import './slick.css';
 
 const settings = {
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 10000,
   speed: 500,
   infinite: true,
   dots: true,
