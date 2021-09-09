@@ -2,7 +2,7 @@
 category: 'hero section'
 title: 'Technologist'
 quote: "a compass will point you to true north, but it's got no advice about the swamps and deserts and chasms that you'll encounter along the way. If in pursuit of your destination you plunge ahead, heedless of obstacles, and achieve nothing more than to sink in a swamp, what's the use of knowing true north?"
-quoteAttribution: "Abraham Lincoln (maybe)"
+quoteAttribution: "Abraham Lincoln"
 quoteAvatar: './abraham-lincoln.png'
 quoteSubtitle: 'The Great Emancipator'
 quoteUrl: 'https://en.wikipedia.org/wiki/Abraham_Lincoln'
