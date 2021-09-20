@@ -27,6 +27,7 @@ const Testimonials = () => {
             html
             frontmatter {
               title
+              name 
               cover {
                 childImageSharp {
                   gatsbyImageData
@@ -51,7 +52,7 @@ const Testimonials = () => {
             const {
               id,
               html,
-              frontmatter: { cover, title }
+              frontmatter: { cover, title, name }
             } = item.node;
 
             return (
@@ -59,6 +60,7 @@ const Testimonials = () => {
                 <Styled.Image>
                   <GatsbyImage image={cover.childImageSharp.gatsbyImageData} alt={title} />
                 </Styled.Image>
+                <Styled.Name>{name}</Styled.Name>
                 <Styled.Title>{title}</Styled.Title>
                 <FormatHtml content={html} />
               </Styled.Testimonial>

@@ -2,5 +2,5 @@
 category: 'services'
 title: 'Resilient, Scaleable Architecture'
 icon: 'server'
-description: 'I have the battle scars to remind teams why building self-healing, resilient architecture that scales with your company is important.'
+description: 'Battle-tested strategies to help teams build self-healing, resilient architecture that scale with the business.'
 ---

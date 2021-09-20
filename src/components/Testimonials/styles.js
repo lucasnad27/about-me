@@ -17,6 +17,10 @@ export const Image = styled.figure`
   }
 `;
 
-export const Title = styled.h3`
-  ${tw`font-semibold my-4`};
+export const Name = styled.h1`
+  ${tw`font-semibold mt-2`};
+`;
+
+export const Title = styled.p`
+  ${tw`font-normal mt-0 mr-4 ml-4 mb-4 italic`};
 `;
