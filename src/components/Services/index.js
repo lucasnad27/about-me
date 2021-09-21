@@ -16,7 +16,7 @@ const Services = () => {
           subtitle
         }
       }
-      allMarkdownRemark(filter: { frontmatter: { category: { eq: "services" } } }, sort: { fields: fileAbsolutePath }) {
+      allMarkdownRemark(filter: { frontmatter: { category: { eq: "services" } } }, sort: { fields: frontmatter___order }) {
         edges {
           node {
             id
