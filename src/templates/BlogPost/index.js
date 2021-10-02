@@ -1,4 +1,5 @@
 import React from 'react';
+import RehypeReact from "rehype-react"
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link';
 
@@ -6,9 +7,21 @@ import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
-import FormatHtml from 'components/utils/FormatHtml';
 
 import * as Styled from './styles';
+
+const renderAst = new RehypeReact({
+  createElement: React.createElement,
+  components: {
+    h1: Styled.SectionHeader,
+    h2: Styled.SubsectionHeader,
+    h3: Styled.MiscHeader,
+    p: Styled.Paragraph,
+    ol: Styled.OrderedList,
+    ul: Styled.UnorderedList,
+    blockquote: Styled.Blockquote,
+  },
+}).Compiler;
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark;
@@ -19,7 +32,7 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO title={post.frontmatter.title} />
       <Container section>
         <TitleSection title={post.frontmatter.date} subtitle={post.frontmatter.title} />
-        <FormatHtml content={post.html} />
+        {renderAst(post.htmlAst)}
         <Styled.Links>
           <span>
             {previous && (
@@ -47,6 +60,7 @@ export const query = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      htmlAst
       frontmatter {
         title
         date(formatString: "MMM DD, YYYY")

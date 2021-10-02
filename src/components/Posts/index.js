@@ -26,6 +26,7 @@ const Posts = () => {
           node {
             id
             html
+            htmlAst
             fields {
               slug
             }
