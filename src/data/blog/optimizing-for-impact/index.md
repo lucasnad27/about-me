@@ -1,7 +1,7 @@
 ---
 category: 'blog'
 cover: './optimizing-for-intrinsic-impact.png'
-title: 'Optimizing for Intrinsic Impact'
+title: 'Optimizing for Impact'
 description: 'A decision-making framework for a successful, meaningful professional life'
 date: '2021-10-01'
 tags: ['career', 'motivation', 'principles']
@@ -80,9 +80,9 @@ Get creative and gritty when identifying how to create value for the principles 
 
 # Conclusion
 
-We've now discussed the fundamentals of our impact decision-making framework. This is not the end product, **this is a starting place**. Defining the size and location of each circle is the real work. If you're interested in learning more about how to optimize these three circles, please [reach out](https://electricocean.io/contact/) and tell me what to write about next! Some future blog posts could include:
+We've now discussed the fundamentals of our impact decision-making framework. This is not the end product, **this is a starting place**. Defining the size and location of each circle is the real work. If you're interested in learning more about how to optimize these three circles, please [reach out](https://electricocean.io/contact/) and tell me what to write about next! Future blog posts could include:
 
-- Quantifying your potential Impact
+- How to Quanity your Potential Impact
 - Principles: How To Find Them
 - Passion: Finding the things you love that everyone else hates
 - Superhuman Protocol: Increasing your value prop to society
