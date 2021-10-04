@@ -1,18 +1,18 @@
 ---
 category: 'blog'
-cover: './optimizing-for-intrinsic-impact.png'
+cover: './venn-diagram-for-life.png'
 title: 'Optimizing for Impact'
 description: 'A decision-making framework for a successful, meaningful professional life'
 date: '2021-10-01'
 tags: ['career', 'motivation', 'principles']
-published: false
+published: true
 ---
 
 # Introduction
 
-The purpose of this piece is to analyze a framework for building a successful career with the well-intended side effect of making the world a better place. We will discuss the philosophy informing this career framework, its components, and practical tips on crafting this framework to optimize for a successful, impactful career.
+The purpose of this piece is to analyze a framework for building a successful career with the well-intended side effect of making the world a better place. We will discuss the philosophy informing this decision framework, its components, and practical tips on crafting this framework to optimize for a successful, impactful career.
 
-> DISCLAIMER: I recognize that writing about "choosing" careers is, in itself, an extremely privileged position to be in. And I wouldn't deny that privilege plays an important role in career success. I've attempted to craft everything below to be applicable for __all humans__, not __just a select few__.
+> DISCLAIMER: I recognize that writing about "choosing" careers is, in itself, an extremely privileged position to be in. Privilege plays an important role in career success. I've attempted to craft everything below to be applicable for all humans, not __just a select few__.
 
 # Becoming a Peak Performer
 
@@ -20,23 +20,15 @@ Presenting a fairly bleak and meager view of humanity, the Harvard psychologist 
 
 > The human individual lives usually far within his limits; he possesses powers of various sorts which he habitually fails to use. He energizes below his maximum, and he behaves below his optimum.
 
-This quote was pulled from [The Art of Impossible](https://www.goodreads.com/book/show/50209348-the-art-of-impossible) and it strikes at one of the core motivations behind our framework. As Kotler puts it:
+What enables a select few to reach their potential while the rest of us grovel in our "below optimum" states? **Motivation.** Without it, the odds are stacked against us. Willpower, discipline, grit. These are all potent side effects of motivation. As [Steven Kotler](https://www.stevenkotler.com) puts it
 
 > Motivation is what gets you into this game
 
-Without intrinsic catalysts: motivation, passion, purpose; making progress in life can be a daunting, seemingly impossible task. But flip that statement on its head and ^^the idea of living a full, lustrous life moves from impossible --> possible --> probable^^. From a statistical outlier to the statistical average.
+Without the intrinsic catalyst of motivation, making progress in life can be a daunting, seemingly impossible task. Finding a career, a purpose, rooted in intrinsic motivation is the pre-requisite for living a life that exceeds not only your expectations, but imagination. And when you find that motivation, <mark>living a full, lustrous life moves from impossible to probable.</mark>
 
-If you're interested in the science behind peak performance, I highly recommend taking a few hours to read Steven Kotler's [book](https://www.goodreads.com/book/show/50209348-the-art-of-impossible). Here are a few shiny lures to entice would-be readers...
+Knowing that becoming a peak performer is predicated on having passion and purpose in life, the **why becomes much more important than the how**. But how do we determine the why? Why do we want to start a business that revolutionizes the toilet paper industry? Why do we want to apply for a job as an infrastructure engineer at a big tech company? If the answer is money, why money? If the answer is to make a difference, why make a difference? These are questions that only you can answer. It's difficult work and you might not like all of the answers you find. But failing to take the time to answer these questions, and you'll be paddling upstream your entire career. The following framework acts as a guidepost when making  these important career decisions. Aligning Passion, Principles, and your own Proposition of Value unlocks optimal impact and performance in whatever path you choose.
 
-- Stacking __drivers__ to activate biological virtuous cycles
-- How to be __600% more creative__
-- Cut your learning time in half
-
-Knowing that becoming a peak performer is predicated on having passion and purpose in life, the __why__ becomes much more important than the __how__. The __why__ is informed by these three circles...
-
-![Impact Venn Diagram](./venn-diagram-for-life.png)
-
-Let's break these down.
+![](./venn-diagram-for-life.png)
 
 ## Principles
 
@@ -88,3 +80,11 @@ We've now discussed the fundamentals of our impact decision-making framework. Th
 - Superhuman Protocol: Increasing your value prop to society
 
 Thank you for taking the time to read this article and good luck in your journey.
+
+
+## References
+
+If you're interested in the science behind peak performance, I highly recommend taking a few hours to read Steven Kotler's book, [The Art of Impossible](https://www.goodreads.com/book/show/50209348-the-art-of-impossible). Here are a few shiny lures to entice would-be readers...
+- Stacking __drivers__ to activate biological virtuous cycles
+- How to be __600% more creative__
+- Cut your learning time in half

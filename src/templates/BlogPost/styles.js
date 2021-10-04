@@ -29,5 +29,5 @@ export const UnorderedList = styled.ul`
 
 export const Blockquote = styled.blockquote`
     border-color: ${tw`border-indigo-900`}
-    ${tw`mt-2 mb-4 relative p-4 text-xl italic border-l-4`}
+    ${tw`mt-2 mb-4 relative p-4 italic border-l-4`}
 `;
