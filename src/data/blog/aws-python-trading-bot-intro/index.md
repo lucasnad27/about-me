@@ -1,9 +1,9 @@
 ---
 category: 'blog'
 cover: './aws-python-trading.png'
-title: 'Blog Mini-Series: Building a Python Trading Bot for less than $5 / month'
+title: 'Building a Python Trading Bot for less than $5 / month'
 description: 'Introduction to the series'
-date: '2021-09-07'
+date: '2021-10-01'
 tags: ['finance', 'python', 'aws']
 published: true
 ---
@@ -65,7 +65,7 @@ Enter the "limited series" blog format. I'll strive to provide context around **
 ## Time To Binge!
 
 If any of the above sound interesting to you, this is the binge-worthy Limited Series for you! I'll be updating this post with links to episodes as they are released:
-- Sharpening Our Tools
+- [Sharpening Our Tools](/blog/sharpening-our-tools/)
 - Interactive Debugging with Docker: The Holy Grail
 - Fun side-project _or_ Production-quality Application?
 - Making technical decisions - S3 as a Database (SAAD)

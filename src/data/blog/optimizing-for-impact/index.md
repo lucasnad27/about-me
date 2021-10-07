@@ -2,8 +2,8 @@
 category: 'blog'
 cover: './venn-diagram-for-life.png'
 title: 'Optimizing for Impact'
-description: 'A decision-making framework for a successful, meaningful professional life'
-date: '2021-10-01'
+description: 'Decision-making framework for career impact'
+date: '2021-09-30'
 tags: ['career', 'motivation', 'principles']
 published: true
 ---
@@ -12,7 +12,9 @@ published: true
 
 The purpose of this piece is to analyze a framework for building a successful career with the well-intended side effect of making the world a better place. We will discuss the philosophy informing this decision framework, its components, and practical tips on crafting this framework to optimize for a successful, impactful career.
 
-> DISCLAIMER: I recognize that writing about "choosing" careers is, in itself, an extremely privileged position to be in. Privilege plays an important role in career success. I've attempted to craft everything below to be applicable for all humans, not __just a select few__.
+<infoblock>
+   ⚠️️ I recognize that "choosing" careers is, in itself, an extremely privileged position to be in. Privilege plays an important role in career success. I've attempted to craft everything below to be applicable for all humans, not __just a select few__.
+</infoblock>
 
 # Becoming a Peak Performer
 

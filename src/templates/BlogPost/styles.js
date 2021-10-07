@@ -34,7 +34,7 @@ export const Blockquote = styled.blockquote`
 
 export const Infoblock = styled.div`
     border-color: ${tw`border-pink-500`}
-    ${tw`mt-2 mb-4 relative p-4 italic border-l-4 bg-pink-200`}
+    ${tw`mt-2 mb-4 relative p-4 italic border-l-4 bg-pink-200 not-italic`}
 `;
 
 export const HighlightMark = styled.mark`
