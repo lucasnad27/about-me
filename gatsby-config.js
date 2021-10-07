@@ -42,12 +42,24 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: false,
+            }
+          },
+          {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 768,
               linkImagesToOriginal: false
             }
-          }
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
+            },
+          },
         ]
       }
     },

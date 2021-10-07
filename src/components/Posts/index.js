@@ -37,7 +37,7 @@ const Posts = () => {
               tags
               cover {
                 childImageSharp {
-                  gatsbyImageData
+                  gatsbyImageData(width: 800, height: 400)
                 }
               }
             }

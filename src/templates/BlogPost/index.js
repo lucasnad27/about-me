@@ -20,6 +20,8 @@ const renderAst = new RehypeReact({
     ol: Styled.OrderedList,
     ul: Styled.UnorderedList,
     blockquote: Styled.Blockquote,
+    infoblock: Styled.Infoblock,
+    mark: Styled.HighlightMark,
   },
 }).Compiler;
 

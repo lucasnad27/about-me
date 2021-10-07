@@ -20,7 +20,7 @@ export const MiscHeader = styled.h3`
 export const Paragraph = styled.p``;
 
 export const OrderedList = styled.ol`
-    ${tw`list-disc ml-8 mt-2 mb-2`}
+    ${tw`list-decimal ml-8 mt-2 mb-2`}
 `;
 
 export const UnorderedList = styled.ul`
@@ -29,5 +29,14 @@ export const UnorderedList = styled.ul`
 
 export const Blockquote = styled.blockquote`
     border-color: ${tw`border-indigo-900`}
-    ${tw`mt-2 mb-4 relative p-4 italic border-l-4`}
+    ${tw`mt-2 mb-4 relative p-4 italic border-l-4 bg-indigo-200`}
+`;
+
+export const Infoblock = styled.div`
+    border-color: ${tw`border-pink-500`}
+    ${tw`mt-2 mb-4 relative p-4 italic border-l-4 bg-pink-200`}
+`;
+
+export const HighlightMark = styled.mark`
+    ${tw`bg-pink-200 text-indigo-900`}
 `;
