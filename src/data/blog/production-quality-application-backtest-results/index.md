@@ -30,11 +30,11 @@ Creating a new repository can be daunting. It's the equivalent of the writer's b
 The difference between those two descriptions is miles a part, or kilometers if you prefer. The former took 15 seconds while the latter took 1 minute. I'd say it was well worth it.
 
 <infoblock>
-👩‍💻 DEVELOPER NOTE: I know the idea of a "succinct purpose" sounds simple and obvious. Recall projects you've worked on in the past and has been in production for a couple years. Chances are that repository has no description indicating it's primary purpose, enabling confusion among new developers and scope creep as the repo matures. Decisions made early in the lifecycle will ripple across the remainder of the code's life cycle, good or bad.
+👩‍💻 I know the idea of a "succinct purpose" sounds simple and obvious. Recall projects you've worked on in the past and has been in production for a couple years. Chances are that repository has no description indicating it's primary purpose, enabling confusion among new developers and scope creep as the repo matures. Decisions made early in the lifecycle will ripple across the remainder of the code's life cycle, good or bad.
 </infoblock>
 
 <infoblock>
-📈 FINANCE NOTE: A repository is a place where you store your code. Code should be managed within a version control system to easily rewind & fast-forward through iterations of your code. This enables us to easily see what's changed, manage access to the code and trigger deployments.
+📈 A repository is a place where you store your code. Code should be managed within a version control system to easily rewind & fast-forward through iterations of your code. This enables us to easily see what's changed, manage access to the code and trigger deployments.
 </infoblock>
 
 # Playing in the sand
@@ -42,7 +42,7 @@ The difference between those two descriptions is miles a part, or kilometers if 
 The majority of our initial data discovery & analysis will occur in [jupyter](https://jupyter.org).
 
 <infoblock>
-📖 DEFINITION: Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.
+📖 Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.
 </infoblock>
 
 ![](./jupyter-startup.gif)
@@ -55,7 +55,7 @@ This is **not** where our core logic will be stored. <mark>The way we've organiz
 As you continue to discover more within the Jupyter environment; you should start seeing helpful abstractions form: ideas for functions, bad data to build test cases against, etc., This is the time when shift to building a quality, shiny API. To frame this in web 2.0 parlance, Jupyter will be a thin "client" and the python source code, `quality-momentum` will be the "server", doing the majority of the data manipulation, algorithm magic, etc.,
 
 <infoblock> 
-👩‍💻 DEVELOPER NOTE: Some newer developers might be confused about building an API that doesn't have a web interface via HTTP. An API is a restful web service you pull json from. An API is also a GraphQL server. An API is also a 3rd party library you depend on to execute logic. An API is also a set of functions or classes that you write and intend to use elsewhere within your codebase.
+👩‍💻 Some newer developers might be confused about building an API that doesn't have a web interface via HTTP. An API is a restful web service you pull json from. An API is also a GraphQL server. An API is also a 3rd party library you depend on to execute logic. An API is also a set of functions or classes that you write and intend to use elsewhere within your codebase.
 </infoblock>
 
 # Production Quality Financial Backtesting
@@ -148,7 +148,7 @@ Optimizing for ease of testing may seem more academic than practical when coding
 Pyfolio works out-of-the-box with [zipline](https://github.com/quantopian/zipline), a popular backtesting tool. It wasn't going to work for the quantitative momentum algorithm though. To work around this, I aimed to create a clean integration point between pyfolio and the `Portfolio` class implementation described above. By creating a series of dataframes: positions, returns, and transactions, we can leverage pyfolio tear sheets, providing us with drawdown periods, sharpe ratio, CAGR, etc.,
 
 <infoblock>
-📈 FINANCE NOTE: Sharpe ratios and compound annual growth rate (CAGR) are common measures to help us understand the inherit risk/reward for any given strategy. A higher CAGR means more $$. A higher sharpe ratio means you achieved that CAGR with less volatility and risk over time.
+📈 Sharpe ratios and compound annual growth rate (CAGR) are common measures to help us understand the inherit risk/reward for any given strategy. A higher CAGR means more $$. A higher sharpe ratio means you achieved that CAGR with less volatility and risk over time.
 </infoblock>
 
 # And the results...
@@ -158,7 +158,7 @@ We have a set of jupyter notebooks, that are able to pull in our 1st-party quali
 ![](./cagr-sharpe-table.png)
 
 <infoblock>
-🐲 DISCLAIMER: These are eye-wateringly good numbers, but beware, there be dragons! Backtesting is not a guarantee of future performance. While the sharpe ratio indicates lower volatility & risk than chucking your money into an undifferentiated bet on the S&P 500, an investor would still go through multiple <b>wild swings</b>. Diversification is your friend and every investor's goals are different.
+🐲 These are eye-wateringly good numbers, but beware, there be dragons! Backtesting is not a guarantee of future performance. While the sharpe ratio indicates lower volatility & risk than chucking your money into an undifferentiated bet on the S&P 500, an investor would still go through multiple <b>wild swings</b>. Diversification is your friend and every investor's goals are different.
 </infoblock>
 
 As you can see from the table above, the quantitative momentum strategy, implemented over the last 30 years delivered in spades. This methodology <mark>outperforms the S&P 500</mark> over the long haul, and <mark>does so with less volatility!</mark> What does a CAGR of 19% look like? **Allocating $100,000 to this portfolio in 1992 would yield you a cool $21,000,000** as of August 2021. Not bad! To see the code that generated these results, go have a look at these [jupyter notebooks](https://github.com/lucasnad27/quality-momentum/tree/d2b78cac3d048bc90a453bc7dc1563cde15960e8/notebooks/backtests/market_cap_percentiles).
