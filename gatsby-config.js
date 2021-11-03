@@ -63,6 +63,12 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-posthog`,
+      options: {
+        apiKey: "phc_zJIUZqVc6NQDVZQsgHdI5CEH8UzvtCqTsI4JJjJYh2I",
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
