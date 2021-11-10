@@ -67,8 +67,8 @@ Enter the "limited series" blog format. I'll strive to provide context around **
 If any of the above sound interesting to you, this is the binge-worthy Limited Series for you! I'll be updating this post with links to episodes as they are released:
 - [Sharpening Our Tools](/blog/sharpening-our-tools/)
 - Interactive Debugging with Docker: The Holy Grail
-- Fun side-project _or_ Production-quality Application?
-- Making technical decisions - S3 as a Database (SAAD)
+- [Fun side-project _or_ Production-quality Application?](/blog/production-quality-application-backtest-results/)
+- [Making technical decisions - S3 as a Database (SAAD)](/blog/saad/)
 - Testing our code, keeping our sanity
 - CI/CD - Lowering Bus factor
 - Back to the Future: Pulling data from the past to inform the future
