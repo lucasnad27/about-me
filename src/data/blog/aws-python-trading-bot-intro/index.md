@@ -69,7 +69,7 @@ If any of the above sound interesting to you, this is the binge-worthy Limited S
 - Interactive Debugging with Docker: The Holy Grail
 - [Fun side-project _or_ Production-quality Application?](/blog/production-quality-application-backtest-results/)
 - [Making technical decisions - S3 as a Database (SAAD)](/blog/saad/)
-- Testing our code, keeping our sanity
+- [Testing our code, keeping our sanity](/blog/testing-code-keeping-sanity/)
 - CI/CD - Lowering Bus factor
 - Back to the Future: Pulling data from the past to inform the future
 - Getting Robots to do our Job
