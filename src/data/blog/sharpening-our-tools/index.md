@@ -8,6 +8,8 @@ tags: ['finance', 'python', 'vscode', 'docker']
 published: true
 ---
 
+> This episode is part of an on-going series. If you'd like to understand some of the context around this article, please see this [introduction episode](/blog/aws-python-trading-bot-intro/).
+
 The title of this episode harkens back to a line from one of my all-time favorite leaders, Abraham Lincoln.
 
 > Give me six hours to chop down a tree and I will spend the first four sharpening the axe

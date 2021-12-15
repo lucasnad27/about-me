@@ -8,6 +8,8 @@ tags: ['finance', 'python', 'coding patterns']
 published: true
 ---
 
+> This episode is part of an on-going series. If you'd like to understand some of the context around this article, please see this [introduction episode](/blog/aws-python-trading-bot-intro/).
+
 In this episode, we'll explain _how_ we are building our trading bot. We'll cover...
 - organizing & storing our code
 - what our data "sandbox" looks like

@@ -8,6 +8,8 @@ tags: ['python', 'testing', 'pytest']
 published: true
 ---
 
+> This episode is part of an on-going series. If you'd like to understand some of the context around this article, please see this [introduction episode](/blog/aws-python-trading-bot-intro/).
+
 Far too often have I dove headfirst, full of excitement & vigor for a new project. I simply didn't have time to think about building a test framework. I was too busy figuring out business logic and learning about interesting caching mechanisms! Mocking out all of those API calls would just be a drag on my productivity. A few weeks later, I've proven my concept and am ready to get it production-ready. Time to write those tests. In doing so, you realize there are portions of the code that are really tough to test without getting your application's state __just right__ to make a test pass. I find myself coding up `mock.patch` 3 times as often as `assert`. Where did I go wrong?
 
 <mark>Some lessons won't stick until we have the battle scars to remind us of past discretions.</mark> This applies to many of life's lessons, and testing your code is no different. In this episode, we are going to cover what I consider to be the most important tenets of testing, within the context of the python language. Here are a few highlights:

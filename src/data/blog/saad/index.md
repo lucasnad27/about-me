@@ -8,6 +8,8 @@ tags: ['database', 'decisionmaking']
 published: true
 ---
 
+> This episode is part of an on-going series. If you'd like to understand some of the context around this article, please see this [introduction episode](/blog/aws-python-trading-bot-intro/).
+
 In this episode of our Trading Bot series, we'll learn how to make better decisions as professionals. I will take you through an informative use case; assessing the nuanced, often-debated decision of application data storage. I hope to provide you with some new tools to help you get past the ill-fated "it depends" answer, ultimately leading to better products and user experience.
 
 # Quality Questions beget Quality Answers
